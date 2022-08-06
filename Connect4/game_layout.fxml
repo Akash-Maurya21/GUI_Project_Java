@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #d9f7f0;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myGame.Connect4.Controller">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="296.0" minWidth="229.33333333333331" prefWidth="229.33333333333331" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="94.3333314259847" minHeight="10.0" prefHeight="25.0" />
+    <RowConstraints maxHeight="492.6666666666667" minHeight="415.6666685740153" prefHeight="486.3333333333333" />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertDiscPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2b3b4c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneTextField" promptText="Player One Name">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="35.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="playerTwoTextField" promptText="Player Two Name">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="setNamesButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="205.0" text=" Set Name">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="playerOne" alignment="CENTER" prefHeight="47.0" prefWidth="300.0" text="Player One" textFill="#f8f4f4">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="turn" alignment="CENTER" prefHeight="39.0" prefWidth="301.0" text="Turn" textFill="#fbfafa">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
